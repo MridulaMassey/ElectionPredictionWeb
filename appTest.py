@@ -13,6 +13,16 @@ import requests
 from bs4 import BeautifulSoup
 from textblob import TextBlob
 
+st.markdown(
+    """<style>
+        .st-eb button {
+            color: black;
+            background-color: lightpink;
+        }
+    </style>""",
+    unsafe_allow_html=True,
+)
+
 def sentiment_check():
     st.title("Sentiment Check")
 
