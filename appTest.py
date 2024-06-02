@@ -176,7 +176,7 @@ def statewise_prediction():
             predictions[state] = 'BJP' if prediction[0] == 1 else 'Congress'
         return predictions
     
-    # Button for Prediction
+  # Button for Prediction
     if st.button("Predict Winner for 2024 Election"):
         # Determine the best model based on accuracy
         best_model_name = "Logistic Regression"
@@ -198,23 +198,14 @@ def statewise_prediction():
             best_model = naive_bayes
             best_accuracy = accuracy_nb
         
-       #  st.write(f"The best model is {best_model_name}")
-        
-       #  # Predict the winner for the 2024 election using the best model
-       #  predicted_winner_2024 = predict_winner_by_state(best_model, state_avg_wins)
-       # # st.write(f"Predicted winner for 2024 election by the best model ({best_model_name}): {predicted_winner_2024}")
-       #  st.write(f"The best model is {best_model_name}")
-       #  predictions_df = pd.DataFrame(list(predicted_winner_2024.items()), columns=['State', 'Predicted Winner'])
-       #   # Display predictions as a table
-       #   st.table(predictions_df)
-       st.write(f"The best model is {best_model_name}")
+        st.write(f"The best model is {best_model_name}")
         
         # Predict the winner for the 2024 election using the best model
-       predicted_winner_2024 = predict_winner_by_state(best_model, state_avg_wins)
+        predicted_winner_2024 = predict_winner_by_state(best_model, state_avg_wins)
         st.write(f"The best model is {best_model_name}")
-       predictions_df = pd.DataFrame(list(predicted_winner_2024.items()), columns=['State', 'Predicted Winner'])
+        predictions_df = pd.DataFrame(list(predicted_winner_2024.items()), columns=['State', 'Predicted Winner'])
         # Display predictions as a table
-       st.table(predictions_df)
+        st.table(predictions_df)
 
 def nationwide_prediction():
     st.title("Nationwide Prediction")
