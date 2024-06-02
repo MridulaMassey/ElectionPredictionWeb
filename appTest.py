@@ -13,16 +13,6 @@ import requests
 from bs4 import BeautifulSoup
 from textblob import TextBlob
 
-st.markdown(
-    """<style>
-        .st-eb button {
-            color: black;
-            background-color: lightpink;
-        }
-    </style>""",
-    unsafe_allow_html=True,
-)
-
 def sentiment_check():
     st.title("Sentiment Check")
 
@@ -348,6 +338,17 @@ def nationwide_prediction():
 
 def main():
     st.title("Election Prediction App")
+
+        # Apply button styling
+    st.markdown(
+        """<style>
+            .st-eb button {
+                color: black;
+                background-color: lightpink;
+            }
+        </style>""",
+        unsafe_allow_html=True,
+    )
     
     tab1, tab2, tab3 = st.tabs(["State-wise Prediction", "Nationwide Prediction", "Sentiment Check"])
     
