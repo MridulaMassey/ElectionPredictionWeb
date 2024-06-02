@@ -339,14 +339,17 @@ def nationwide_prediction():
 def main():
     st.title("Election Prediction App")
 
-        # Apply button styling
+ # Apply button styling
     st.markdown(
-        """<style>
-            .st-eb button {
-                color: black;
-                background-color: lightpink;
+        """
+        <style>
+            /* Style for the predict button */
+            .st-eb.st-eb-ai button {
+                color: black !important;
+                background-color: lightpink !important;
             }
-        </style>""",
+        </style>
+        """,
         unsafe_allow_html=True,
     )
     
