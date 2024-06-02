@@ -202,7 +202,7 @@ def statewise_prediction():
         
         # Predict the winner for the 2024 election using the best model
         predicted_winner_2024 = predict_winner_by_state(best_model, state_avg_wins)
-        st.write(f"The best model is {best_model_name}")
+        #st.write(f"The best model is {best_model_name}")
         predictions_df = pd.DataFrame(list(predicted_winner_2024.items()), columns=['State', 'Predicted Winner'])
         # Display predictions as a table
         st.table(predictions_df)
