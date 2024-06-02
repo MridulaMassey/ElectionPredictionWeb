@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+textblob
+scikit-learn
+pandas
+matplotlib
+seaborn
+statsmodels
+streamlit
+xgboost
